@@ -43,5 +43,11 @@ namespace CrawlerCenter
                 Console.WriteLine(filename);
             }
         }
+
+        private void newCrwlSchedule_Click(object sender, RoutedEventArgs e)
+        {
+            AddNewCrwlSchedule win = new AddNewCrwlSchedule();
+            win.Show();
+        }
     }
 }

@@ -13,7 +13,7 @@
                 <MenuItem Header="刪除組件" HorizontalAlignment="Left" Width="149"/>
             </MenuItem>
         </Menu>
-        <Button x:Name="button" Content="新增爬蟲" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button" Content="新增爬蟲" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="newCrwlSchedule_Click"/>
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="267" Margin="0,27,0,0" VerticalAlignment="Top" Width="517">
             <ListView.View>
                 <GridView>
