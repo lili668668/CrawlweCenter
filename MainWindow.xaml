@@ -1,0 +1,28 @@
+﻿<Window x:Class="CrawlerCenter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrawlerCenter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="0,26,0,0">
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="26" Margin="0,-26,0,0" VerticalAlignment="Top" Width="517">
+            <MenuItem Header="組件">
+                <MenuItem Header="加入組件" HorizontalAlignment="Left" Width="149" Click="AddDLL_Click"/>
+                <MenuItem Header="刪除組件" HorizontalAlignment="Left" Width="149"/>
+            </MenuItem>
+        </Menu>
+        <Button x:Name="button" Content="新增爬蟲" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="267" Margin="0,27,0,0" VerticalAlignment="Top" Width="517">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="啟動" Width="50"/>
+                    <GridViewColumn Header="爬蟲組件名稱" Width="100"/>
+                    <GridViewColumn Header="爬蟲設定" Width="260"/>
+                    <GridViewColumn Header="狀態" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
